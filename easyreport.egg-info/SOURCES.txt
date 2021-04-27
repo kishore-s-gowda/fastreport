@@ -1,0 +1,5 @@
+setup.py
+easyreport.egg-info/PKG-INFO
+easyreport.egg-info/SOURCES.txt
+easyreport.egg-info/dependency_links.txt
+easyreport.egg-info/top_level.txt
