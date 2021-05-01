@@ -3,7 +3,7 @@
 Get report of different metrices  for classification and regression problem for many popular algorithms with single line of code. You have to pass only features(dataframe) and target(series) as arguments
 
 
-Link to [PyPI](https://pypi.org/project/easyreport/)
+Link to [PyPI](https://pypi.org/project/fastreport/)
 
 Link to [Classification detailed example](https://github.com/kishore-s-gowda/fastreport/blob/master/Classification%20example.ipynb)
 
