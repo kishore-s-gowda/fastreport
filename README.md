@@ -5,7 +5,9 @@ Get report of different metrices  for classification and regression problem for 
 
 Link to [PyPI](https://pypi.org/project/easyreport/)
 
-Link to [detailed example](https://github.com/kishore-s-gowda/fastreport)
+Link to [Classification detailed example](https://github.com/kishore-s-gowda/fastreport/blob/master/Classification%20example.ipynb)
+
+Link to [Regression detailed example](https://github.com/kishore-s-gowda/fastreport/blob/master/Regression%20Problem.ipynb)
 
 
 ## Installation
@@ -27,7 +29,7 @@ import report
 
 report.report_classification(df_features,df_target,algorithms='default',test_size=0.3,scaling=None,
                              large_data=False,encode='dummy',average='binary',change_data_type = False,
-                             threshold=8,random_state=None,return_imp_feat=True):
+                             threshold=8,random_state=None):
    
 
 ```
@@ -56,7 +58,7 @@ report.report_classification(df_features,df_target,algorithms='default',test_siz
     test_size: If float, should be between 0.0 and 1.0 and represent the proportion of the 
                dataset to include in the test split.
     
-    scaling : {'StandardScalar', 'MinmaxScalar'} or None , default=None
+    scaling : {'Standard-scalar', 'Min-Max'} or None , default=None
     
     encode : {'dummy','onehot','label'} ,default='dummy'
     
@@ -134,7 +136,7 @@ report.report_regression(df_features,df_target,algorithms='default',test_size=0.
     test_size: If float, should be between 0.0 and 1.0 and represent the proportion of the 
                dataset to include in the test split.
     
-    scaling : {'StandardScalar', 'MinmaxScalar'} or None , default=None
+    scaling : {'Standard-scalar', 'Min-Max'} or None , default=None
     
     encode : {'dummy','onehot','label'} ,default='dummy'
     
@@ -154,9 +156,16 @@ report.report_regression(df_features,df_target,algorithms='default',test_size=0.
 
 
 ## Future works
+
 1. Optimization
 2. Add more functionality
 
 ## Drawbacks
+
 1. Not suitable for very large datasets
 2. Limited to existing users only
+
+## License
+
+© 2021 KISHORE S
+This repository is licensed under the MIT license. See LICENSE for details.
