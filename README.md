@@ -31,6 +31,9 @@ report.report_classification(df_features,df_target,algorithms='default',test_siz
    
 
 ```
+    parameters
+    ----------------------------
+
     df_features : Pandas DataFrame
     
     df_target : Pandas Series
@@ -107,6 +110,9 @@ report.report_regression(df_features,df_target,algorithms='default',test_size=0.
                       threshold=8,random_state=None):
 
 ```
+    parameters
+    ----------------------------
+
     df_features : Pandas DataFrame
     
     df_target : Pandas Series
