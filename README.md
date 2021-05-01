@@ -107,7 +107,44 @@ report.report_regression(df_features,df_target,algorithms='default',test_size=0.
                       threshold=8,random_state=None):
 
 ```
-
+    df_features : Pandas DataFrame
+    
+    df_target : Pandas Series
+    
+     algorithms : List ,'default'=
+                 [LinearRegression(),
+                 Lasso(),
+                 Ridge(),
+                 RandomForestRegressor(),
+                 GradientBoostingRegressor(),
+                 AdaBoostRegressor()]
+                 The above are the default algorithms, if one needs any specific algorithms, they have to import
+                 libraries then pass the instances of alogorith as list
+                 For example, if one needs random forest and adaboost only, then pass 
+                 
+                 algorithms=[RandomForestRegressor(max_depth=8),AdaBoostRegressor()]
+                 But, these libraries must be imported before passing into above list like
+                 
+    test_size: If float, should be between 0.0 and 1.0 and represent the proportion of the 
+               dataset to include in the test split.
+    
+    scaling : {'StandardScalar', 'MinmaxScalar'} or None , default=None
+    
+    encode : {'dummy','onehot','label'} ,default='dummy'
+    
+    change_data_type : bool, default=False
+                       Some columns will be of numerical datatype though there are only 2-3 unique values in that column,
+                       so these columns must be converted to object as it is more relevant.
+                       By setting change_data_type= True , these columns will be converted into object datatype
+    
+    threshold : int ,default=8
+                Maximum unique value a column can have
+                
+    large_data : bool, default=False
+                If the dataset is large then the parameter large_data should be set to True, 
+                make sure if your system has enough memory before setting Large_data=True
+                
+    random_state : int, RandomState instance or None, default=None
 
 
 ## Future works
