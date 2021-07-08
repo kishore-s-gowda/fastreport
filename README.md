@@ -1,6 +1,6 @@
 # Fastreport
 
-Get report of different metrices  for classification and regression problem for many popular algorithms with single line of code. You have to pass only features(dataframe) and target(series) as arguments
+Get report of different metrices  for classification and regression problem for many popular algorithms with single line of code, passing only features(dataframe) and target(series) as arguments
 
 
 Link to [PyPI](https://pypi.org/project/fastreport/)
